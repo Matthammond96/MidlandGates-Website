@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    var imageSize = $('#topContainer').height();
+    var imageSize = $('.item').height();
  
-    $('#headerRow').css('padding-top', imageSize * 0.5);
-    $(".contentContainer").css("min-height",$(window).height())
+    $('#headerRow').css('padding-top', "100px");
+    $(".contentContainer").css("min-height", imageSize);
     $("#homeCarousel").css("height", $(window).height());
-    $(".item").css("height", $(window).height());
+    //$(".item").css("height", $(window).height());
 })
