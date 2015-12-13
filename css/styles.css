@@ -3,7 +3,7 @@
 }
 
 #topContainer {
-  background-image: url('../images/s3.JPG');
+/*  background-image: url('../images/s3.JPG');*/
   width:100%;
   background-size:cover;
 }
@@ -65,4 +65,14 @@
 
 .textMargin{
   margin: 10px;
+}
+
+#headerRow {
+    color: white;
+    z-index: 3;
+}
+
+#homeCarousel {
+    position: absolute;
+    z-index: -1;
 }
