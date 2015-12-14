@@ -3,21 +3,32 @@ $(document).ready(function() {
     console.log(imageSize * 0.2);
  
     $('#headerRow').css('padding-top', imageSize * 0.2);
-    $(".contentContainer").css("min-height", imageSize);
-    $("#homeCarousel").css("height", $(window).height());
-    //$(".item").css("height", $(window).height());
+    
+    if ($(".caroIMG").height() >= $(window).height()) {
+        $(".item").css("height", $(window).height());
+    }
+    
+    
+    var sliderSize = $('.item').height();
+    
+    $(".carousel-indicators").css("top", sliderSize - 50);
 })
 
 $(window).resize(function() {
-    var newSizing = $('#myCarousel').height();
-    console.log('new height: ' + newSizing);
+    var newSizing = $('.item').height();
+    var screenSzie = $(window).width();
     
-    $(".contentContainer").css("min-height", newSizing);
+    $(".carousel-indicators").css("top", newSizing - 50);
+    $(".item").css("height", "");
     
-    if ($(window).width() >= 1000) {
+    if (screenSzie >= 1250) {
         $('#headerRow').css('padding-top', newSizing * 0.2);
-        $(".contentContainer").css("min-height", newSizing);
-    } else {
+    } else if (screenSzie <= 1350 && screenSzie >= 1150) {
+        $('#headerRow').css('padding-top', newSizing * 0.1);
+    } else if (screenSzie <=1150 && screenSzie >= 500) {
         $('#headerRow').css('padding-top', newSizing * 0.05);
+    } else if (screenSzie <= 500 && screenSzie >= 0) {
+        $('#headerRow').css('padding-top', newSizing * 0.01);
+        console.log("Less than 500");
     }
 })

@@ -5,6 +5,7 @@
 #topContainer {
 /*  background-image: url('../images/s3.JPG');*/
   width:100%;
+    background-color: black;
   background-size:cover;
 }
 
@@ -69,10 +70,9 @@
 
 #headerRow {
     color: white;
-    z-index: 3;
-}
-
-#homeCarousel {
     position: absolute;
-    z-index: 0;
+    width: 100%;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
 }
