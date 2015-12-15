@@ -39,11 +39,11 @@
   margin-bottom:50px;
 }
 
-#footer{
-  background-color:#262625;
+.footer{
+  background-color:#101010;
   padding-top:0px;
   width:100%;
-  height: 100px;
+  
   
   bottom: 0;
   left: 0;
