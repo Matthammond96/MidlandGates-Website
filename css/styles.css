@@ -86,6 +86,16 @@ body {
     background-color: #101010;
     width: 100%;
 }
+ 
+#footerMidCol {
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 2px;
+    
+}
 
 .seperator {
     background-color: #101010;
