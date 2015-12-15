@@ -3,15 +3,15 @@ $(document).ready(function() {
     console.log(imageSize * 0.2);
  
     $('#headerRow').css('padding-top', imageSize * 0.2);
+    $('.dropdown-toggle').dropdown();
     
     if ($(".caroIMG").height() >= $(window).height()) {
         $(".item").css("height", $(window).height());
     }
     
-    
     var sliderSize = $('.item').height();
-    
     $(".carousel-indicators").css("top", sliderSize - 50);
+    
 })
 
 $(window).resize(function() {
