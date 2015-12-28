@@ -1,4 +1,6 @@
 <?php
+
+    
     if ($_POST["submit"]) {
 
         $result='<div class="alert alert-success">Form Submitted</div>';
@@ -27,6 +29,11 @@
     if ($error){
         
         $result='<div class="alert alert-danger"><strong>All fields must be filled!</strong>'.$error.'</div>';
+    }
+
+    if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+        
+         $error.="<br />Please enter a valid email address";
     }
 
     else {
@@ -141,7 +148,7 @@
                 <input type="tel" name="telno" class="form-control" placeholder="Contact number:" value="<?php echo $_POST['telno']; ?>">
                 <br>
                 <textarea type="text" name="message" <?php echo $_POST['message']; ?> class="form-control" placeholder="Enter your query:"></textarea>     
-                <input type="submit" name="submit" class="btn btn-success btn-lg marginTop" value="Submit"/>  
+                <input type="submit" id="btnSubmit" name="submit" class="btn btn-success btn-lg marginTop" value="Submit"/>  
             </div>
         </form>
       
