@@ -117,7 +117,6 @@
         </form>
       
       <h2>Alternativley call us on <a href="tel:01283 000000">01283 000000</a></h2>
-      <h2>Or Email us at <a href="mailto:sales@midlandgates.co.uk">sales@midlandgates.co.uk</a></h2>
       <br>
     </div>
       
