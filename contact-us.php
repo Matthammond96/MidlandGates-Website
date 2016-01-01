@@ -140,7 +140,7 @@
         <script src="js/bootstrap.min.js"></script>    
         <script src="js/homePageOnLoad.js"></script>
         <script src="js/linkscroll.js"></script>
-        <script>$(".screenSize").css("min-height",$(window).height())</script>
+<!--        <script>$(".screenSize").css("min-height",$(window).height())</script>-->
     </section>
 
 </body>

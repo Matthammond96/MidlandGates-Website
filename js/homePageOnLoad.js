@@ -34,6 +34,15 @@ $(document).ready(function() {
     var navSetting = $("body").attr("data-navSetting");
     $("#" + navSetting).addClass("active");
     
+    var windowHeight = $(window).height();
+    var documentHeight = $(".screenSize").height();
+    
+    if (windowHeight > documentHeight && navSetting != "home"){
+        $(".footerContainer").css("position", "absolute");
+        $(".footerContainer").css("bottom", "0px");
+        $(".footerContainer").css("width", screenSzie);
+    }
+    
 })
 
 $(window).resize(function() {
