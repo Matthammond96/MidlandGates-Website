@@ -14,12 +14,12 @@ body {
 }
 
 #topRow {
-  margin-top:100px;
+  margin-top: 100px;
   text-align:center;
 }
 
 #topRow h1{
-  font-size:300%
+  font-size:500%;
 }
 
 .bold{
@@ -121,16 +121,66 @@ body {
     padding-left: 5%;
 }
 
+.headerContent {
+    font-size: 500%;
+}
+.centerDiv {
+    width:195px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.paypalVerticalBanner {
+    float: left;
+    margin-top: 50px;
+}
+
+.paypalBanner {
+    
+}
 
 /*Media Queries*/
 @media screen and (min-width: 992px) {
     .rightFooterCol {
         text-align: right;
     }
+    .headerContent {
+    font-size: 300%;
+    }
+    #headerRow{
+        padding-top: 20px;
+    }
+    #paypal-1 {display: none;}
+    #paypal-2 {display: none;}
+    #paypal-3 {display: none;}
+    #paypalVertical {display: block;}
 }
 
 @media screen and (max-width: 992px) {
     .rightFooterCol {
         text-align: left;
     }
+    #topRow {
+        margin-top: 50px;
+    }
+    #paypal-1 {display: block;}
+    #paypal-2 {display: none;}
+    #paypal-3 {display: none;}
+    #paypalVertical {display: none;}
+}
+
+@media screen and (max-width:675px){
+    .headerContent {
+        font-size: 100%;
+    }
+    #topRow {
+        margin-top: 20px;
+    }
+    #topContainer {
+        padding-top: 40px;
+    }
+    #paypal-1 {display: none;}
+    #paypal-2 {display: none;}
+    #paypal-3 {display: block;}
+    #paypalVertical {display: none;}
 }

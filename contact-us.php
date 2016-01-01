@@ -8,22 +8,22 @@
 
     if (!$_POST['name']){
         
-        $error="<br />Please enter your name";
+        $error="<br />Please enter your name:";
     }
 
     if (!$_POST['email']){
         
-        $error.="<br />Please enter your email address";        
+        $error.="<br />Please enter your email address:";        
     }
 
     if (!$_POST['telno']){
         
-        $error.="<br />Please enter your telephone number";
+        $error.="<br />Please enter your telephone number:";
     }
 
     if (!$_POST['message']){
         
-        $error.="<br />Please enter your query";        
+        $error.="<br />Please enter your query:";        
     }
     
     if ($error){
@@ -33,7 +33,7 @@
 
     if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         
-         $error.="<br />Please enter a valid email address";
+         $error.="<br />Please enter a valid email address:";
     }
 
     else {
@@ -78,7 +78,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
    
 </head>
-<body> 
+<body data-navSetting="contact-us"> 
     
     <!-- Nav-Bar Section  -->
     <section>
