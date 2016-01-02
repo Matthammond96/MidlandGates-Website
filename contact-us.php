@@ -117,6 +117,7 @@
         </form>
       
       <h2>Alternativley call us on <a href="tel:01283 000000">01283 000000</a></h2>
+      <h2>Or tweet us <a href="https://twitter.com/MidlandGates">@MidlandGates</a></h2>
       <br>
     </div>
       
