@@ -4,7 +4,7 @@ $(document).ready(function() {
         
         $("html, body").animate({
             scrollTop: $(linkattr).position().top
-        }, 300);
+        }, 500);
         
     })
     

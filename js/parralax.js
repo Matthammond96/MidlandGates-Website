@@ -1,7 +1,11 @@
-$(window).scroll(function() {
-    //console.log("Page Scrolling");  
+$(document).ready(function() {
+  
+    var contentPosition = $("#wrappingContent").position().top;
+    var Contentheight = $("#wrappingContent").height();
+    var navPositioning = contentPosition + Contentheight;
+    var navHeight = $(".footerContainer").height();
     
-    var scrollPosition = $(document).scrollTop();
-    var headerSize = $("#topContainer").height();
-    //console.log(headerSize);
+    $(".footerContainer").css("top", navPositioning);
+    $("html, body").css("height", navPositioning + navHeight);
+    
 })
