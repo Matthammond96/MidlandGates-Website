@@ -1,11 +1,32 @@
 $(document).ready(function() {
+    var screenWidth = $(window).width();
+    
+    if (screenWidth > 700) {
+        $("#topContainer").css("position", "fixed");
+        $("#wrappingContent").css("position", "absolute");
+        $(".footerContainer").css("position", "absolute");
+        var contentPosition = $("#wrappingContent").position().top;
+        var Contentheight = $("#wrappingContent").height();
+        var navPositioning = contentPosition + Contentheight;
+        var navHeight = $(".footerContainer").height();
+        console.log("TOO SMALL");
+        $(".footerContainer").css("top", navPositioning);
+        $("html, body").css("height", navPositioning + navHeight);
+    }
+})
+
+$(document).resize(function() {
   
-    var contentPosition = $("#wrappingContent").position().top;
-    var Contentheight = $("#wrappingContent").height();
-    var navPositioning = contentPosition + Contentheight;
-    var navHeight = $(".footerContainer").height();
-    
-    $(".footerContainer").css("top", navPositioning);
-    $("html, body").css("height", navPositioning + navHeight);
-    
+    if ($(window).width() > 700) {
+        $("#topContainer").css("position", "fixed");
+        $("#wrappingContent").css("position", "absolute");
+        $(".footerContainer").css("position", "absolute");
+        var contentPosition = $("#wrappingContent").position().top;
+        var Contentheight = $("#wrappingContent").height();
+        var navPositioning = contentPosition + Contentheight;
+        var navHeight = $(".footerContainer").height();
+        console.log("TOO SMALL");
+        $(".footerContainer").css("top", navPositioning);
+        $("html, body").css("height", navPositioning + navHeight);
+    }
 })

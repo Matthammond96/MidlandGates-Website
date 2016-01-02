@@ -8,19 +8,17 @@ body {
 
 #topContainer {
 /*  background-image: url('../images/s3.JPG');*/
-  width:100%;
+    width:100%;
     background-color: black;
-  background-size:cover;
+    background-size:cover;
 }
 
 #wrappingContent {
-    position: absolute;
     width: 100%;
     background-color: #f5f5f5;
 }
 
 .footerContainer {
-    position: absolute;
     width: 100%;
 }
 
