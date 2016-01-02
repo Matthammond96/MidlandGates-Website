@@ -34,6 +34,7 @@ $(document).ready(function() {
     var navSetting = $("body").attr("data-navSetting");
     $("#" + navSetting).addClass("active");
     
+    $("#mainContent").css("padding-top", imageSize);
 })
 
 $(window).resize(function() {
