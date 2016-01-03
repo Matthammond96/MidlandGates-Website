@@ -66,7 +66,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Contact Midland Gates - Suppliers of Quality Driveway Gates">
+    <meta name="keywords" content="entrance gates, drive way gates, estate gates, wooden driveway gates, driveway gates, timber driveway gates, drive gate, handmade gate, wooden gates, midland gates, swan neck gates, contact us">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
     <title>Midland Gates - Contact Us</title>
