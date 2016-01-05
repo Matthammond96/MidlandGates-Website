@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).on('load', function()  {
     var screenWidth = $(window).width();
     
     if (screenWidth > 700) {
@@ -9,7 +9,8 @@ $(document).ready(function() {
         var Contentheight = $("#wrappingContent").height();
         var navPositioning = contentPosition + Contentheight;
         var navHeight = $(".footerContainer").height();
-        console.log("TOO SMALL");
+        console.log(navHeight);
+        console.log();
         $(".footerContainer").css("top", navPositioning);
         $("html, body").css("height", navPositioning + navHeight);
     }

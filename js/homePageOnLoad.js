@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).on('load', function()  {
     var imageSize = $('#myCarousel').height();
     console.log(imageSize * 0.2);
  
@@ -34,7 +34,8 @@ $(document).ready(function() {
     var navSetting = $("body").attr("data-navSetting");
     $("#" + navSetting).addClass("active");
     
-    $("#wrappingContent").css("top", imageSize);
+    console.log(newSizing);
+    $("#wrappingContent").css("top", newSizing);
 })
 
 $(window).resize(function() {
