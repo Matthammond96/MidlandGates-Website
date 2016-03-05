@@ -5,10 +5,6 @@ $(document).ready(function() {
         $("html, body").animate({
             scrollTop: $(linkattr).position().top
         }, 500);
-    });
-})    
-
-$(window).scrollTop(function() {
-    var posFromTop = $(window).scrollTop() * 0.3;
-    $('#topContainer').css('top', -1*posFromTop);
-})
+        
+    })
+})             
